@@ -7,7 +7,6 @@ sys.dont_write_bytecode = True
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(CURRENT_DIR))
 from func_import import open_file
-from func_import import open_file
 
 
 def render():
@@ -38,10 +37,8 @@ def render():
     st.subheader("Relationships")
     st.markdown(
         """
-        - There are different types of relationships between species: parasitic, symbiosis, and predatory. These correlations 
+        There are different types of relationships between species: parasitic, symbiosis, and predatory. These correlations 
         are discussed in more detail in Correlation tab. We estimate these relationships based on the count of species in a given area.
-        - As we only have a limited number of species and observations, we also provide a prediction map (inferential map/...) to predict
-        biodiversity for the whole map. We use Bayesian/MaxEnt model to perform this inferential process.
         """
     )
 
